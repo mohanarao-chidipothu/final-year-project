@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = axios.create({ baseURL: "http://localhost:8000/student" });
+const API = axios.create({ baseURL: "https://final-year-project-su80.onrender.com/student" });
 
 API.interceptors.request.use((req) => {
   const locallyStored = JSON.parse(localStorage.getItem("profile"));
